@@ -1,0 +1,28 @@
+<icecast>
+  <location>XSEN Network</location>
+  <admin>admin@xsen.fun</admin>
+
+  <limits>
+    <clients>1000</clients>
+    <sources>10</sources>
+    <queue-size>524288</queue-size>
+  </limits>
+
+  <authentication>
+    <source-password>STRONG_SOURCE_PASSWORD</source-password>
+    <admin-password>STRONG_ADMIN_PASSWORD</admin-password>
+    <relay-password>STRONG_RELAY_PASSWORD</relay-password>
+  </authentication>
+
+  <hostname>YOUR_RAILWAY_DOMAIN.up.railway.app</hostname>
+
+  <listen-socket>
+    <port>8000</port>
+  </listen-socket>
+
+  <mount>
+    <mount-name>/xsen-live</mount-name>
+    <public>0</public> <!-- IMPORTANT -->
+  </mount>
+
+</icecast>
